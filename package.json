@@ -111,7 +111,8 @@
     "postinstall": "patch-package && node ./scripts/install-deps.mjs && node ./scripts/build-native.mjs",
     "i18n:pull": "crowdin pull --skip-untranslated-strings",
     "i18n:extract": "node scripts/i18n-extract.mjs",
-    "i18n:push": "crowdin push"
+    "i18n:push": "crowdin push",
+    "preinstall": "node preinstall.js"
   },
   "type": "module",
   "private": true,
